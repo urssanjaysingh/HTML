@@ -1,0 +1,12 @@
+<!-- Sometimes it is desired that you want to give an option where a user will click a link 
+    and it will pop up a "File Download" box to the user instead of displaying actual content. 
+    This is very easy and can be achieved using an HTTP header in your HTTP response.
+For example, if you want make a Filename file downloadable from a given link then its 
+syntax will be as follows. -->
+
+#!/usr/bin/perl
+# Additional HTTP Header
+print "Content-Type:application/octet-stream; name=\"FileName\"\r\n";
+print "Content-Disposition: attachment; filename=\"FileName\"\r\n\n";
+# Open the target file and list down its content as follows
+open( FILE, "<FileName" ); while(read(FILE, $buffer, 100)){ print("$buffer"); }

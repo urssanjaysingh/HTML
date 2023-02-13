@@ -1,0 +1,20 @@
+<!-- Here you simply put your image inside a hyper link and use ismap attribute
+which makes it special image and when the user clicks some place within the image, the browser passes
+the coordinates of the mouse pointer along with the URL specified in the <a> tag to the web server.
+The server uses the mouse-pointer coordinates to determine which document to deliver back to the browser.
+The href attribute must contain the URL of a server application like a cgi to process the 
+incoming request based on the passed coordinates. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>ISMAP Hyperlink Example</title>
+    </head>
+
+    <body>
+        <p>Click following link</p>
+        <a href="/cgi-bin/ismap.cgi" target="_self"><img ismap src="google.png" alt="Google"/></a>
+    </body>
+
+</html>

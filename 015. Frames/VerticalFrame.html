@@ -1,0 +1,24 @@
+<!-- Here we replaced rows attribute by cols and changed their width. 
+    This will create all the three frames vertically. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>HTML Frames</title>
+    </head>
+    <frameset cols="25%, 50%, 25%" frameborder="1">
+        <frame name="top" src="topFrame.html">
+        <frame name="main" src="mainFrame.html">
+        <frame name="bottom" src="bottomFrame.html">
+        <noframes>
+            <body>
+                <p>Your broser does not support frames.</p>
+            </body>
+        </noframes>
+    </frameset>
+
+</html>
+
+<!-- If a user is using any browser, which does not support frames 
+    then <noframes> element should be displayed -->

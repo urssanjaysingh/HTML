@@ -1,0 +1,23 @@
+<!-- When you link HTML documents related to the same website, 
+    it is not required to give complete URL for every link.
+You can get rid of it if you use <base> tag in your HTML document header. 
+This tag is used to give a base path for all the links. 
+So your browser will concatenate given relative path to this base path and will make a complete URL. -->
+
+<!-- Following example makes use of <base> tag to specify base URL 
+and later we can use relative path to all the links instead of giving complete URL for every link. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Hyperlink</title>
+        <base href="http://www.tutorialspoint.com/">
+    </head>
+
+    <body>
+        <p>Click following link</p>
+        <a href="/html/index.html" target="_blank">HTML Tutorial</a>
+    </body>
+
+</html>

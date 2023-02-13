@@ -1,0 +1,19 @@
+<!-- One of the most popular uses of frames is to place navigation bars in one frame and then 
+load main pages into a separate frame -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>HTML Target Frames</title>
+    </head>
+    <frameset cols="200, *" frameborder="0">
+        <frame src="menu.html" name="menu_page" />
+        <frame src="main.html" name="main_page" />
+        <noframes>
+            <body>
+                Your browser does not support frames.
+            </body>
+        </noframes>
+
+</html>

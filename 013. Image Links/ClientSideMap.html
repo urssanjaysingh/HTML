@@ -1,0 +1,35 @@
+<!-- Client side image maps are enabled by the usemap attribute of the <img /> tag and defined by
+special <map> and <area> extension tags.
+The image that is going to form the map is inserted into the page using the <img /> tag 
+as a normal image, except it carries an extra attribute called usemap.
+The <area> tag inside the map tag, specifies the shape and the coordinates to define the boundaries
+of each clickable hotspot available on the image. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>USEMAP Hyperlink Example</title>
+    </head>
+
+    <body>
+        <p>Search and Click the Hotspot</p>
+        <img src="google.png" alt="Google" usemap="#html">
+
+        <!-- Create Mapping -->
+        <map name="html">
+            <area shape="circle" coords="80, 80, 20" href="https://www.google.com/" alt="Google" target="_self">
+            <area shape="rect" coords="5, 5, 40, 40" href="https://www.bing.com/" alt="Bing" target="_self">
+        </map>
+
+    </body>
+
+</html>
+
+<!-- Coordinate System
+rect = x1, y1, x2, y2
+x1 and y1 are the coordinates of the upper left corner of the rectangle; 
+x2 and y2 are the coordinates of the lower right corner.
+circle = x0, y0, radius
+x0 and y0 are the coordinates of the center of the circle, and radius is the circle's radius. A circle
+centered at 200, 50 with a radius of 25 would have the attribute coords="200,50,25" -->

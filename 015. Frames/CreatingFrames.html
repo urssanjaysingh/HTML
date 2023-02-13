@@ -1,0 +1,27 @@
+<!-- HTML frames are used to divide your broser window into multiple sections where each section
+can load a sparate HTML document. A collection of frames in the browser window is known as a frameset.
+To use frames on a page we use <frameset> tag instead of <body> tag. The <frameset> tag defines,
+    how to divide the window into frames
+The rows attribute define horizontal frames and cols defines vertical frames.
+Each frame is indicated by <frame> tag and it defines which HTML document shall open into the frame. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>HTML Frames</title>
+    </head>
+    <frameset rows="10%, 80%, 10%" frameborder="yes">
+        <frame name="top" src="topFrame.html">
+        <frame name="main" src="mainFrame.html">
+        <frame name="bottom" src="bottomFrame.html">
+        <noframes>
+            <body>
+                <p>Your broser does not support frames.</p>
+            </body>
+        </noframes>
+    </frameset>
+
+</html>
+
+<!-- There are still few browsers that do not support frame technology. -->
