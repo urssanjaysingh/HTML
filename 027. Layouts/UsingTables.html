@@ -1,0 +1,48 @@
+<!-- A webpage layout is very important to give better look to your website. It takes considerable 
+time to design a website's layout with great look and feel. Now- a-days, all modern websites,
+are using CSS and JavaScript based framework to come up with responsive and dynamic websites 
+but you can create a good layout using simple HTML tables or division tags in combination with 
+other formatting tags.  -->
+
+<!-- HTML Layout - Using Tables
+The simplest and most popular way of creating layouts is using HTML <table> tag. These tables are 
+arranged in columns and rows, so you can utilize these rows and columns in whatever way you like.
+For example, the following HTML layout example is achieved using a table with 3 rows and 2 columns 
+but the header and footer column spans both columns using the colspan attribute: -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>HTML Layout Using Tables</title>
+    </head>
+
+    <body>
+        <table width="100%" border="0">
+            <tr>
+                <td colspan="2" bgcolor="#b5dcb3">
+                    <h1>This Is Web Page's Main Title</h1>
+                </td>
+            </tr>
+            <tr valign="top">
+                <td bgcolor="#aaa" width="50">
+                    <b>Main Menu</b><br />
+                    HTML <br />
+                    PHP <br />
+                    PERL... <br />
+                </td>
+                <td bgcolor="#eee" width="100" height="200">
+                    Technical and Managerial Tutorials
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="#b5dcb3">
+                    <center>
+                        Copyright &copy; 2007 Tutorialspoint.com
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+</html>

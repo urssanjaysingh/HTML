@@ -1,0 +1,24 @@
+<!-- Event handlers are nothing but simply defined functions which can be called against any 
+mouse or keyboard event. You can define your business logic inside your event handler 
+which can vary from a single to 1000s of line code.
+Let's write one simple functionEventHandler() in the header of the document. We will call 
+this function when any user brings mouse over a paragraph. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Event Handlers</title>
+        <base href="http://www.tutorialspoint.com/" />
+        <script type="text/JavaScript">
+            function EventHandler() {
+                alert("I'm event handler!");
+            }
+        </script>
+    </head>
+
+    <body>
+        <p onmouseover="EventHandler();">Bring your mouse here to see an alert</p>
+    </body>
+
+</html>

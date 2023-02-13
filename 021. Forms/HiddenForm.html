@@ -1,0 +1,23 @@
+<!-- Hidden form controls are used to hide data inside the page which later on can be pushed 
+    to the server. This control hides inside the code and does not appear on the actual page. 
+For example, following hidden form is being used to keep current page number. When a user will 
+click next page then the value of hidden control will be sent to the web server and there 
+it will decide which page will be displayed next based on the passed current page. -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>File Upload Box</title>
+    </head>
+
+    <body>
+        <form>
+            <p>This is page 10</p>
+            <input type="hidden" name="pagename" value="10" />
+            <input type="submit" name="submit" value="Submit" />
+            <input type="reset" name="reset" value="Reset" />
+        </form>
+    </body>
+
+</html>

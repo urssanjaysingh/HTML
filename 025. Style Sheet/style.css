@@ -1,0 +1,15 @@
+/* Here we defined three CSS rules which will be applicable to three different classes defined 
+for the HTML tags. I suggest you should not bother about how these rules are being defined 
+because you will learn them while studying CSS. */
+
+.red {
+    color: red;
+}
+
+.thick {
+    font-size:20px;
+}
+
+.green {
+    color:green;
+}
