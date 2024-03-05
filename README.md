@@ -28,4 +28,4 @@ urssanjaysingh welcomes contributions to this repository! If you have additional
 
 If you have any questions or need further assistance, you can reach out to urssanjaysingh via email at sanjaysingh26112000@gmail.com.
 
-Thank you for visiting this repository, and enjoy learning HTML with the examples and projects!
+Thank you for visiting this repository, and enjoy learning HTML with the examples and projects! :)
